@@ -6,13 +6,13 @@ This repository is to set the standard of the TWx Beatmap Format(TWx in short).
 
 ## Format Specifications
 
-## Intro
+### Intro
 
 TWx is based on JSON format. It is hard to parse TXT based beatmap format (like BMS), but you can read JSON format using common well-known APIs in every languages. So it gets easier to use TWx to construct your game.
 
 TWx is now accustomed to line-based rhythm games; in other words, the 1-dimension rhythm games. If your rhythm game has linear input line (no matter what the shape of line is), then you can use TWx in almost any situations.
 
-## Structure
+### Structure
 
 Simply say, TWx looks like this:
 
@@ -43,7 +43,7 @@ Simply say, TWx looks like this:
         ]
     }
 
-## Essential variables
+### Essential variables
 
 Essential variables are variables which is necessary to run your games. If one value goes wrong, whole game will not be run.
 
@@ -95,11 +95,11 @@ Determines the end point of a note. Note is being hitted at the line of this val
 **PrevIDs** *int[]*  
 indicates what note is linked ++before++ this note.  
 
-## Optional variables
+### Optional variables
 
 Optional variables contain extra information of notes, information of the song, and others.
 
-### Metadata
+#### Metadata
 
 Metadata usually contains the information of the song or the beatmap itself.
 
@@ -133,7 +133,7 @@ Array of the song's beat. This is needed when you want to open TWx file in the e
 **beatsQueue** *int[]*  
 Array of the block number. This is needed when you want to open TWx file in the editor.
 
-### Notes
+#### Notes
 
 **YPos** *int*  
 This value is simillar to 'Tick'. A block is divided in 192 positions. This is needed when you want to open TWx file in the editor.
