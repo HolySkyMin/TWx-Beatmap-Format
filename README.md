@@ -93,7 +93,7 @@ Determines the start point of a note.
 Determines the end point of a note. Note is being hitted at the line of this value.
 
 **PrevIDs** *int[]*  
-indicates what note is linked ++before++ this note.  
+indicates what note is linked before this note.  
 
 ### Optional variables
 
